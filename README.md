@@ -78,3 +78,7 @@ export default App;
 ### 1.0.0
 
 - responsive-css-material-ui is made publicly available
+
+### 1.0.1
+
+- Corrected the way we decide which provided style is applied

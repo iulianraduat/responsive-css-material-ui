@@ -5,7 +5,7 @@ const ResponsiveCssMaterialUi = (props: ResponsiveCssMaterialUiProps) => {
   React.Children.only(props.children);
 
   const css: React.CSSProperties = getCss(props);
-  
+
   const newChild: React.ReactElement[] = React.Children.map(props.children, (child: React.ReactElement<any>) => {
     const style: React.CSSProperties = child.props.style;
     const newStyle: React.CSSProperties = !style ? css : { ...style, ...css };
@@ -17,27 +17,28 @@ const ResponsiveCssMaterialUi = (props: ResponsiveCssMaterialUiProps) => {
 
 const getCss = (props: ResponsiveCssMaterialUiProps): React.CSSProperties => {
   switch (props.width) {
-    case 'xs':
-      if (!!props.xs) {
-        return props.xs;
-      }
-    case 'sm':
-      if (!!props.sm) {
-        return props.sm;
-      }
-    case 'md':
-      if (!!props.md) {
-        return props.md;
+    case 'xl':
+      if (!!props.xl) {
+        return props.xl;
       }
     case 'lg':
       if (!!props.lg) {
         return props.lg;
       }
-    case 'xl':
-      if (!!props.xl) {
-        return props.xl;
+    case 'md':
+      if (!!props.md) {
+        return props.md;
       }
+    case 'sm':
+      if (!!props.sm) {
+        return props.sm;
+      }
+    case 'xs':
     default:
+      if (!!props.xs) {
+        return props.xs;
+      }
+      
       throw new Error("Please define at least one of 'md', 'lg', 'sm', 'xl', 'xs'");
   }
 };
