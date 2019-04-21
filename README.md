@@ -14,13 +14,12 @@ The component accepts the props defined bellow in the table.
 
 | Name | Type          | Required | Default   | Description                                                                      |
 |------|---------------|----------|-----------|----------------------------------------------------------------------------------|
-| lg   | CSSProperties | no*      | undefined | CSS used for the lg breakpoint and wider screens (if not overridden)             |
-| md   | CSSProperties | no*      | undefined | CSS used for the md breakpoint and wider screens (if not overridden)             |
-| sm   | CSSProperties | no*      | undefined | CSS used for the sm breakpoint and wider screens (if not overridden)             |
-| xl   | CSSProperties | no*      | undefined | CSS used for the xl breakpoint and wider screens (if not overridden)             |
-| xs   | CSSProperties | no*      | undefined | CSS used for the xs breakpoint and bellow, and wider screens (if not overridden) |
+| lg   | CSSProperties | no       | undefined | CSS used for the lg breakpoint and wider screens (if not overridden)             |
+| md   | CSSProperties | no       | undefined | CSS used for the md breakpoint and wider screens (if not overridden)             |
+| sm   | CSSProperties | no       | undefined | CSS used for the sm breakpoint and wider screens (if not overridden)             |
+| xl   | CSSProperties | no       | undefined | CSS used for the xl breakpoint and wider screens (if not overridden)             |
+| xs   | CSSProperties | no       | undefined | CSS used for the xs breakpoint and bellow, and wider screens (if not overridden) |
 
-no* means that at least one of them should be defined or an exception is triggered.
 ---
 
 There must be only one child otherwise an exception is triggered.
@@ -82,3 +81,7 @@ export default App;
 ### 1.0.1
 
 - Corrected the way we decide which provided style is applied
+
+### 1.0.2
+
+- Removed the requirement to provide at least one prop
