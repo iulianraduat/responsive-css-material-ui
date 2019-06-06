@@ -29,6 +29,7 @@ There must be only one child otherwise an exception is triggered.
 | ResponsiveCssMaterialUi _uses_ | Material-ui | React  |
 |-------------------------------:|:-----------:|:------:|
 |                          1.0.x |    3.9.3    | 16.8.6 |
+|                          2.0.x |    4.0.2    | 16.8.6 |
 
 ### About versioning schema used for ResponsiveCssMaterialUi
 
@@ -85,3 +86,7 @@ export default App;
 ### 1.0.2
 
 - Removed the requirement to provide at least one prop
+
+### 2.0.0
+
+- Updated packages
