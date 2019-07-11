@@ -30,6 +30,7 @@ There must be only one child otherwise an exception is triggered.
 |-------------------------------:|:-----------:|:------:|
 |                          1.0.x |    3.9.3    | 16.8.6 |
 |                          2.0.x |    4.0.2    | 16.8.6 |
+|                          2.1.x |    4.2.0    | 16.8.6 |
 
 ### About versioning schema used for ResponsiveCssMaterialUi
 
@@ -88,5 +89,9 @@ export default App;
 - Removed the requirement to provide at least one prop
 
 ### 2.0.0
+
+- Updated packages
+
+### 2.1.0
 
 - Updated packages
