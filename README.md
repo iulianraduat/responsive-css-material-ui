@@ -2,7 +2,7 @@
 
 A material-ui component which applies different CSS to a child component based on the page's current width (based on material-ui defined breakpoints).
 
-The order of breakpoints: xs, sm, md, lg, xl. You can find [here](https://material-ui.com/layout/breakpoints) the values defined currently by material-ui for these breakpoints. 
+The order of breakpoints: xs, sm, md, lg, xl. You can find [here](https://material-ui.com/customization/breakpoints/#breakpoints) the values defined currently by material-ui for these breakpoints. 
 
 ---
 
@@ -31,6 +31,7 @@ There must be only one child otherwise an exception is triggered.
 |                          1.0.x |    3.9.3    | 16.8.6 |
 |                          2.0.x |    4.0.2    | 16.8.6 |
 |                          2.1.x |    4.2.0    | 16.8.6 |
+|                          2.2.x |    4.2.1    | 16.8.6 |
 
 ### About versioning schema used for ResponsiveCssMaterialUi
 
@@ -94,4 +95,9 @@ export default App;
 
 ### 2.1.0
 
+- Updated packages
+
+### 2.2.0
+
+- Added a storybook
 - Updated packages

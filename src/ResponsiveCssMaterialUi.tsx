@@ -18,6 +18,7 @@ const ResponsiveCssMaterialUi = (props: ResponsiveCssMaterialUiProps) => {
 };
 
 const getCss = (props: ResponsiveCssMaterialUiProps): React.CSSProperties | undefined => {
+  console.log({ w: props.width });
   switch (props.width) {
     case 'xl':
       if (!!props.xl) {
