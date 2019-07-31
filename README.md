@@ -105,3 +105,7 @@ export default App;
 
 - Added a storybook
 - Updated packages
+
+### 2.2.1
+
+- Added a prop debug for an easier development

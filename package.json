@@ -1,6 +1,6 @@
 {
   "name": "responsive-css-material-ui",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "A material-ui component which applies different CSS to a child component based on the page's current width (based on material-ui defined breakpoints).",
   "main": "lib/index.js",
   "sideEffects": false,

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 export interface ResponsiveCssMaterialUiProps extends React.Props<ResponsiveCssMaterialUi> {
+  debug?: boolean;
   lg?: React.CSSProperties;
   md?: React.CSSProperties;
   sm?: React.CSSProperties;
