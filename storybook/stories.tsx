@@ -16,6 +16,7 @@ const lg: React.CSSProperties = { backgroundColor: '#336699' };
 const xl: React.CSSProperties = { backgroundColor: '#003366' };
 
 storiesOf('ResponsiveCssMaterialUi', module)
+  .addParameters({ options: { showPanel: false } })
   .add('with disabled debug', () => (
     <div>
       <ResponsiveCssMaterialUi xs={xs} md={md} sm={sm} lg={lg} xl={xl}>
