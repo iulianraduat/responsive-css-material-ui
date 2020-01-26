@@ -6,15 +6,23 @@ const ResponsiveCssMaterialUi = (props: ResponsiveCssMaterialUiProps) => {
 
   const css: React.CSSProperties | undefined = getCss(props);
 
-  const newChild: React.ReactElement[] = React.Children.map(props.children, (child: React.ReactElement<any>) => {
-    let newStyle: React.CSSProperties | undefined = child.props.style;
-    if (!!css) {
-      newStyle = !newStyle ? css : { ...newStyle, ...css };
+  const newChild: JSX.Element[] = React.Children.map<JSX.Element, React.ReactNode>(
+    props.children,
+    (child: React.ReactElement<HTMLElement>) => {
+      const style = getStyle(child.props.style, css);
+      return React.cloneElement(child, { style });
     }
-    return React.cloneElement(child, { style: newStyle });
-  });
+  )!;
 
   return <React.Fragment>{newChild}</React.Fragment>;
+};
+
+const getStyle = (style?: CSSStyleDeclaration, css?: React.CSSProperties): CSSStyleDeclaration | undefined => {
+  if (!css) {
+    return style;
+  }
+
+  return style ? { ...style, ...css } : (css as any);
 };
 
 const getCss = (props: ResponsiveCssMaterialUiProps): React.CSSProperties | undefined => {
