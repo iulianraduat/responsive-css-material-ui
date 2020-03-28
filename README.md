@@ -1,4 +1,4 @@
-# responsive-css-material-ui
+# responsive-css-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/responsive-css-material-ui 'Weekly downloads')
 
 A material-ui component which applies different CSS to a child component based on the page's current width (based on material-ui defined breakpoints).
 
