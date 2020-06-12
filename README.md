@@ -1,4 +1,4 @@
-# responsive-css-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/responsive-css-material-ui 'Weekly downloads')
+# responsive-css-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/responsive-css-material-ui "Weekly downloads")
 
 A material-ui component which applies different CSS to a child component based on the page's current width (based on material-ui defined breakpoints).
 
@@ -39,6 +39,7 @@ There must be only one child otherwise an exception is triggered.
 |                          2.3.x |    4.3.3    | 16.9.0 |
 |                          2.4.x |    4.9.0    | 16.9.0 |
 |                          2.5.x |    4.9.7    | 16.9.0 |
+|                          2.6.x |   4.10.2    | 16.9.0 |
 
 ### About versioning schema used for ResponsiveCssMaterialUi
 
@@ -53,15 +54,15 @@ There must be only one child otherwise an exception is triggered.
 Displaying a div aligned differently based on the current window size:
 
 ```js
-import * as React from 'react';
-import ResponsiveCssMaterialUi from 'responsive-css-material-ui';
+import * as React from "react";
+import ResponsiveCssMaterialUi from "responsive-css-material-ui";
 
 class App extends React.Component {
   render() {
-    var xs = { textAlign: 'center' };
-    var md = { textAlign: 'left' };
-    var lg = { textAlign: 'right' };
-    var style = { color: 'gray' };
+    var xs = { textAlign: "center" };
+    var md = { textAlign: "left" };
+    var lg = { textAlign: "right" };
+    var style = { color: "gray" };
 
     return (
       <div className="App">
@@ -121,3 +122,7 @@ export default App;
 
 - Updated packages
 - Moved from npm to yarn
+
+### 2.6.0
+
+- Updated packages
