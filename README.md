@@ -40,6 +40,7 @@ There must be only one child otherwise an exception is triggered.
 |                          2.4.x |    4.9.0    | 16.9.0 |
 |                          2.5.x |    4.9.7    | 16.9.0 |
 |                          2.6.x |   4.10.2    | 16.9.0 |
+|                          2.7.x |   4.11.0    | 16.9.0 |
 
 ### About versioning schema used for ResponsiveCssMaterialUi
 
@@ -124,5 +125,9 @@ export default App;
 - Moved from npm to yarn
 
 ### 2.6.0
+
+- Updated packages
+
+### 2.7.0
 
 - Updated packages
