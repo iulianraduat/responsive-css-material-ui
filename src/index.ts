@@ -1,1 +1,1 @@
-export * from './ResponsiveCssMaterialUi';
+export { default } from "./ResponsiveCssMaterialUi";
