@@ -1,4 +1,4 @@
-# responsive-css-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/responsive-css-material-ui "Weekly downloads")
+# responsive-css-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/responsive-css-material-ui 'Weekly downloads')
 
 A material-ui component which applies different CSS to a child component based on the page's current width (based on material-ui defined breakpoints).
 
@@ -30,17 +30,18 @@ There must be only one child otherwise an exception is triggered.
 
 ## Versions
 
-| ResponsiveCssMaterialUi _uses_ | Material-ui | React  |
-| -----------------------------: | :---------: | :----: |
-|                          1.0.x |    3.9.3    | 16.8.6 |
-|                          2.0.x |    4.0.2    | 16.8.6 |
-|                          2.1.x |    4.2.0    | 16.8.6 |
-|                          2.2.x |    4.2.1    | 16.8.6 |
-|                          2.3.x |    4.3.3    | 16.9.0 |
-|                          2.4.x |    4.9.0    | 16.9.0 |
-|                          2.5.x |    4.9.7    | 16.9.0 |
-|                          2.6.x |   4.10.2    | 16.9.0 |
-|                          2.7.x |   4.11.0    | 16.9.0 |
+| ResponsiveCssMaterialUi _uses_ | Material-ui |      React       |
+| -----------------------------: | :---------: | :--------------: |
+|                          1.0.x |    3.9.3    |      16.8.6      |
+|                          2.0.x |    4.0.2    |      16.8.6      |
+|                          2.1.x |    4.2.0    |      16.8.6      |
+|                          2.2.x |    4.2.1    |      16.8.6      |
+|                          2.3.x |    4.3.3    |      16.9.0      |
+|                          2.4.x |    4.9.0    |      16.9.0      |
+|                          2.5.x |    4.9.7    |      16.9.0      |
+|                          2.6.x |   4.10.2    |      16.9.0      |
+|                          2.7.x |   4.11.0    |      16.9.0      |
+|                          2.8.x |   4.11.3    | 16.9.0 or 17.0.0 |
 
 ### About versioning schema used for ResponsiveCssMaterialUi
 
@@ -55,15 +56,15 @@ There must be only one child otherwise an exception is triggered.
 Displaying a div aligned differently based on the current window size:
 
 ```js
-import * as React from "react";
-import ResponsiveCssMaterialUi from "responsive-css-material-ui";
+import * as React from 'react';
+import ResponsiveCssMaterialUi from 'responsive-css-material-ui';
 
 class App extends React.Component {
   render() {
-    var xs = { textAlign: "center" };
-    var md = { textAlign: "left" };
-    var lg = { textAlign: "right" };
-    var style = { color: "gray" };
+    var xs = { textAlign: 'center' };
+    var md = { textAlign: 'left' };
+    var lg = { textAlign: 'right' };
+    var style = { color: 'gray' };
 
     return (
       <div className="App">
@@ -135,3 +136,8 @@ export default App;
 ### 2.7.1
 
 - Fixed crash produced by "export \* from"
+
+### 2.8.0
+
+- Accepting React 17 as peerDependencies
+- Fixed security warnings
